@@ -1,5 +1,5 @@
 ### Prerequisite :
-#### Ensure 'git' already installed
+#### you can install first
     apt-get update -y && apt-get install git -y
 ### Steps :
     chmod ug+x /path/to/your/script.sh
