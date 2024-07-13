@@ -1,6 +1,6 @@
 #!/bin/bash
-telegram_token='<YOUR_API_KEY>'
-telegram_group='<YOUR_TELEGRAM_GROUP>'
+telegram_token='<YOUR_API_KEY_BOT_TELEGRAM>'
+telegram_group='<YOUR_TELEGRAM_GROUP_ID>'
 telegram_user_tag="@<YOUR_TELEGRAM_USERNAME>"
 # Stop editing
 # Script starts here
