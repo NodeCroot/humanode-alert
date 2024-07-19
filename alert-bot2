@@ -9,7 +9,7 @@ workspace_file="/root/.humanode/workspaces/default/workspace.json" # Check the f
 nodename=$(jq -r '.nodename' $workspace_file)
 
 # Execute command to fetch authentication URL
-auth_url=$(/root/.humanode/workspaces/default/./humanode-peer bioauth auth-url --rpc-url-ngrok-detect --chain /root/.humanode/workspaces/default/chainspec.json)
+auth_url=" URL $(/root/.humanode/workspaces/default/./humanode-peer bioauth auth-url --rpc-url-ngrok-detect --chain /root/.humanode/workspaces/default/chainspec.json)"
 
 # Script starts here
 server_ip=$(curl -s https://api.ipify.org)
