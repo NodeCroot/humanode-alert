@@ -31,7 +31,7 @@ else
     if (( difference > 25 && difference < 31 )); then
       message="🟡 ${nodename} humanode (${server_ip}) will be deactivated in 30 minutes, please prepare for re-authentication ${telegram_user_tag}"
     elif (( difference > 0 && difference < 6 )); then
-      message="🔴${nodename} humanode (${server_ip}) will be deactivated in 5 minutes, please prepare for re-authentication ${telegram_user_tag} ${auth_url}"
+      message="🔴${nodename} humanode (${server_ip}) will be deactivated in 5 minutes, please prepare for re-authentication ${telegram_user_tag} Cek ${auth_url}"
     else
       message="NULL"
     fi
