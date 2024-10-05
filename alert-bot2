@@ -29,7 +29,7 @@ else
     difference=$(( (expires_at / 1000 - current_timestamp) / 60 ))
 
     if (( difference > 50 && difference < 60 )); then
-      message="🟡 ${nodename} humanode (${server_ip}) will be deactivated in 30 minutes, please prepare for re-authentication ${telegram_user_tag}"
+      message="🟡 ${nodename} humanode (${server_ip}) will be deactivated in 60 minutes, please prepare for re-authentication ${telegram_user_tag}"
     elif (( difference > 0 && difference < 6 )); then
       message="🔴${nodename} humanode (${server_ip}) will be deactivated in 5 minutes, please prepare for re-authentication ${telegram_user_tag} URL: ${auth_url}"
     else
