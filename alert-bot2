@@ -27,7 +27,7 @@ else
     URL: ${auth_url}"
   else
     current_timestamp=$(date +%s)
-    expires_at=$(curl -s http://127.0.0.1:9933 -X POST -H "Content-Type: application/json" -d '{"jsonrpc":"2.0","method":"bioauth_status","params":[],"id":1}' | jq '.result.Active.expires_at')
+    expires_at=$(curl -s http://127.0.0.1:9944 -X POST -H "Content-Type: application/json" -d '{"jsonrpc":"2.0","method":"bioauth_status","params":[],"id":1}' | jq '.result.Active.expires_at')
     difference=$(( (expires_at / 1000 - current_timestamp) / 60 ))
 
     if (( difference > 50 && difference < 60 )); then
